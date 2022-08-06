@@ -1,0 +1,536 @@
+* {
+    margin: 0;
+    padding: 0
+}
+
+html,
+body,
+#home {
+    height: 100%;
+    overflow-x: hidden
+}
+
+body {
+    display: block;
+    background: linear-gradient(50deg, #58ff48, #416dff);
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+    transition: all .5s ease-in-out
+}
+
+a:hover {
+    color: #595959;
+    text-decoration: underline
+}
+
+.logo {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 5px
+}
+
+#barra-menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: rgba(172, 240, 0, 0.8);
+    height: 8vh
+}
+
+.nav-list {
+    list-style: none;
+    display: flex
+}
+
+.nav-list li {
+    letter-spacing: 2px;
+    margin-left: 32px
+}
+
+.mobile-menu {
+    display: none;
+    cursor: pointer
+}
+
+.mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: #000;
+    margin: 8px;
+    transition: .5s
+}
+
+.mobile-menu.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px)
+}
+
+.mobile-menu.active .line2 {
+    opacity: 0
+}
+
+.mobile-menu.active .line3 {
+    transform: rotate(45deg) translate(-5px, -7px)
+}
+
+.capa {
+    text-align: center
+}
+
+.home {
+    overflow: hidden
+}
+
+.home h3 {
+    color: #000
+}
+
+#home h2 {
+    color: #595959
+}
+
+#servicos {
+    background: #fff
+}
+
+#servicos h2 {
+    color: #000
+}
+
+#servicos h3 {
+    font-size: 60px;
+    color: #000
+}
+
+#recursos h2 {
+    color: #595959;
+    text-align: center
+}
+
+#recursos h3 {
+    color: #000
+}
+
+.caixa {
+    font-size: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center
+}
+
+.caixa-confirmacao {
+    text-align: center
+}
+
+.caixa-confirmacao a {
+    color: #000;
+    font-size: 30px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all .5s ease-in-out
+}
+
+.caixa-confirmacao a:hover {
+    color: #595959
+}
+
+.ofc1 {
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px
+}
+
+.ofc2 {
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 179px
+}
+
+.formulario {
+    padding: 20px 0
+}
+
+.album {
+    padding: 10px 0
+}
+
+.container-equipe {
+    margin-bottom: 50px
+}
+
+.campo-bernardo {
+    padding-bottom: 68px
+}
+
+.campo-kaio {
+    padding-bottom: 135px
+}
+
+.campo-andre {
+    padding-bottom: 113px
+}
+
+.equipe {
+    text-align: center
+}
+
+h3 {
+    color: #fff
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    width: 3%;
+    opacity: 1;
+    top: 90%;
+    color: #000
+}
+
+.carousel-indicators {
+    opacity: 1
+}
+
+.form {
+    width: 100%;
+    max-width: 32rem;
+    font-size: 1.5rem
+}
+
+.form label,
+.form input,
+.form textarea {
+    display: block;
+    width: 100%
+}
+
+.form label {
+    color: #000;
+    line-height: 1;
+    margin-bottom: .5rem;
+    margin-top: 1.5rem
+}
+
+.form input,
+.form textarea {
+    font: inherit;
+    padding: .5rem;
+    margin-bottom: 1rem;
+    border: 2px solid #000;
+    border-radius: 5px;
+    transition: all .5s ease-in-out
+}
+
+.form textarea {
+    min-height: 13rem;
+    resize: vertical
+}
+
+.form input:hover,
+.form input:focus,
+.form textarea:hover,
+.form textarea:focus {
+    outline: none;
+    border-color: #595959
+}
+
+.form button {
+    display: block;
+    padding: .5rem;
+    color: #fff;
+    background: #000;
+    border: 3px solid #595959;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all .5s ease-in-out
+}
+
+.form button:hover {
+    background: #595959;
+    border: 3px solid #000;
+    color: #fff
+}
+
+footer {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 50px 0 20px;
+    position: relative
+}
+
+footer h4 {
+    color: #919496;
+    font-size: .8em;
+    text-transform: uppercase
+}
+
+footer .navbar-nav li a {
+    color: #fff;
+    font-size: 1em
+}
+
+footer .navbar-nav li {
+    color: #fff;
+    font-size: .8em
+}
+
+footer .navbar-nav a:hover {
+    color: #000;
+    text-decoration: underline;
+    transition: all .5s ease-in-out
+}
+
+footer ul {
+    list-style: none
+}
+
+footer ul li {
+    float: right;
+    margin: 0 5px
+}
+
+footer .direitos {
+    padding-top: 20px;
+    color: #fff;
+    text-align: center
+}
+
+footer .direitos span {
+    padding-top: 20px;
+    color: #20dafb;
+    text-align: center
+}
+
+footer .meio {
+    text-align: center
+}
+
+h2 {
+    font-weight: 900;
+    letter-spacing: -.05em;
+    margin-top: 80px;
+    margin-bottom: 50px;
+    color: #6e6e6e;
+    font-size: 3em
+}
+
+h3 {
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: -.04em
+}
+
+@media(max-width: 575.98px) {
+    h2 {
+        font-size: 2em
+    }
+
+    body {
+        overflow-x: hidden
+    }
+
+    .nav-list {
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 50vw;
+        height: 92vh;
+        background: rgba(172, 240, 0, 0.8);
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: all .5s ease-in-out;
+        z-index: 1
+    }
+
+    .navlist li {
+        margin-left: 0;
+        opacity: 1
+    }
+
+    .mobile-menu {
+        display: block
+    }
+}
+
+.nav-list.active {
+    transform: translateX(0)
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translate(50px)
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(0)
+    }
+}
+
+@media(min-width: 576px) and (max-width: 767.98px) {
+    h2 {
+        font-size: 2em
+    }
+
+    body {
+        overflow-x: hidden
+    }
+
+    .nav-list {
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 50vw;
+        height: 92vh;
+        background: rgba(172, 240, 0, 0.8);
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: all .5s ease-in-out;
+        z-index: 1
+    }
+
+    .navlist li {
+        margin-left: 0;
+        opacity: 0
+    }
+
+    .mobile-menu {
+        display: block
+    }
+}
+
+.nav-list.active {
+    transform: translateX(0)
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translate(50px)
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(0)
+    }
+}
+
+@media(min-width: 768px) and (max-width: 991.98px) {
+    h2 {
+        font-size: 3em
+    }
+
+    body {
+        overflow-x: hidden
+    }
+
+    .nav-list {
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 50vw;
+        height: 92vh;
+        background: rgba(172, 240, 0, 0.8);
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: all .5s ease-in-out;
+        z-index: 1
+    }
+
+    .navlist li {
+        margin-left: 0;
+        opacity: 0
+    }
+
+    .mobile-menu {
+        display: block
+    }
+}
+
+.nav-list.active {
+    transform: translateX(0)
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translate(50px)
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(0)
+    }
+}
+
+@media(min-width: 992px) and (max-width: 1199.98px) {
+    h2 {
+        font-size: 4em
+    }
+
+    body {
+        overflow-x: none
+    }
+
+    .nav-list {
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 50vw;
+        height: 92vh;
+        background: rgba(172, 240, 0, 0.8);
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: all .5s ease-in-out;
+        z-index: 1
+    }
+
+    .navlist li {
+        margin-left: 0;
+        opacity: 0
+    }
+
+    .mobile-menu {
+        display: block
+    }
+}
+
+.nav-list.active {
+    transform: translateX(0)
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translate(500px)
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(0)
+    }
+}
+
+@media(min-width: 1200px) {
+    h2 {
+        font-size: 5em
+    }
+
+    .mobile-menu {
+        display: none
+    }
+}
